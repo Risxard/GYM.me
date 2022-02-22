@@ -1801,10 +1801,6 @@ main {
 
 @media (max-width: 768px) {
     
-            html {
-    -webkit-tap-highlight-color: rgba(0, 0, 0 ,0);
-}
-    
     .Mark, .Lauren, .John {
         width: 300px;
         height: 400px;
