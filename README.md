@@ -1,4 +1,4 @@
-# LANDING PAGE MORDERNA E RESPONSIVA.
+# 👨🏾‍💻 LANDING PAGE MORDERNA E RESPONSIVA 👨🏾‍💻
 
  https://risxard.github.io/Gymme/
 
