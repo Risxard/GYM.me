@@ -22,6 +22,6 @@ Tecnologias usadas:
 
 
 
-By https://www.figma.com/@imklau
+https://www.figma.com/community/file/1061248425841959554
 Reproduzido por @Risxard
 
