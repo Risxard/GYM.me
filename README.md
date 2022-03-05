@@ -1,7 +1,7 @@
 <h1 align="center">👨🏾‍💻 LANDING PAGE MORDERNA E RESPONSIVA 👨🏾‍💻</h1>
 
 <p align="center">
- <a href='https://risxard.github.io/Gymme/'>Visitar Site »</a>
+ <a href='https://risxard.github.io/Gymme/'>» Visitar Site «</a>
 
 </p>
 
@@ -24,7 +24,7 @@ Tecnologias usadas:
 </p>
 
 <p align="center">
-  <a href='https://www.figma.com/community/file/1061248425841959554'> DESIGN ORIGINAL EM FIGMA »</a>
+  <a href='https://www.figma.com/community/file/1061248425841959554'>» DESIGN ORIGINAL EM FIGMA «</a>
 </p>
 <p align="center">
  Reproduzido por <a href='https://github.com/Risxard'>@Risxard</a>
