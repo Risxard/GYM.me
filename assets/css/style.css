@@ -984,7 +984,7 @@ main {
 
 
 .TrainingH1-Container {
-    margim: 80px 0px 80px 0px;
+    margin-bottom: 80px;
     width: 540px;
     height: 120px;
     display: flex;
