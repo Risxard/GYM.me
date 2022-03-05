@@ -815,6 +815,7 @@ main {
 }
 
 .H1-Container {
+    margim-bottom: 80px;
     width: auto;
 
 
@@ -983,6 +984,7 @@ main {
 
 
 .TrainingH1-Container {
+    margim-top: 80px;
     width: 540px;
     height: 120px;
     display: flex;
