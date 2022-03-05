@@ -2044,7 +2044,7 @@ margin-top: 80px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-    background-image: url(https://github.com/Risxard/Gymme/blob/gh-pages/assets/css/FAQ/Vector.svg);
+    background-image: url('https://github.com/Risxard/Gymme/blob/gh-pages/assets/css/FAQ/Vector.svg');
 }
 
 .FAQ-accordion {
