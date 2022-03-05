@@ -2051,7 +2051,7 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-    background-image: url(''assets/css/FAQ/Vector.png');
+    background-image: url('assets/css/FAQ/Vector.png');
 }
 
 .FAQ-accordion {
