@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     width: 100%;
     scroll-behavior: smooth;
     overflow-y: auto;
@@ -12,9 +13,9 @@ html {
     box-sizing: border-box;
 }
 
-@media (max-width: 900px){
-    html{
-        -webkit-tap-highlight-color: rgba(0, 0, 0 ,0);
+@media (max-width: 900px) {
+    html {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 }
 
@@ -29,16 +30,17 @@ html {
 
 @keyframes wipe-in-left {
     from {
-      clip-path: inset(0 0 0 100%);
+        clip-path: inset(0 0 0 100%);
     }
+
     to {
-      clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0);
     }
-  }
-  
-  [transition-style="in:wipe:left"] {
+}
+
+[transition-style="in:wipe:left"] {
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
-  }
+}
 
 
 #wrapper {
@@ -107,7 +109,7 @@ html {
 
 }
 
-.btn-menu span{
+.btn-menu span {
     position: absolute;
     transform: scale(0);
     transition-delay: 3s;
@@ -152,20 +154,20 @@ html {
     transition: all .50s;
 }
 
-.animation .btn-menu::before{
+.animation .btn-menu::before {
     transform: translateX(-50px) scale(0);
 }
 
-.animation .burger{
+.animation .burger {
     transform: scaleX(0);
     opacity: 0%;
 }
 
-.animation .btn-menu::after{
+.animation .btn-menu::after {
     transform: translateX(50px) scale(0);
 }
 
-.animation .btn-menu span{
+.animation .btn-menu span {
     transform: scale(1);
 }
 
@@ -273,7 +275,7 @@ html {
 
     color: #FFFFFF;
 
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -294,7 +296,7 @@ html {
 }
 
 .btnGreen p {
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -401,7 +403,9 @@ nav {
 }
 
 
+
 nav span svg {
+    cursor: pointer;
     margin-right: 20px;
     position: static;
     width: 85px;
@@ -410,27 +414,54 @@ nav span svg {
     top: 7.5px;
 }
 
-#HOME-WHITE {
+nav ul li a {
+
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 68px;
+    align-content: center;
+    width: auto;
     height: 21px;
-    color: black;
-    background: rgba(255, 255, 255, 0.9);
-    font-family: Inter;
+
+    font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+
+    padding: 1px 10px 1px 10px;
+
+    border-radius: 1px;
 }
+
+#HomeHoverON, #HomeHoverON a {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-weight: 600;
+}
+
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+
+    line-height: 18px;
+}
+
+
+
+
+
+
+
+
+
+
 
 nav ul {
     z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
 }
 
 nav ul li {
@@ -439,7 +470,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -492,6 +523,16 @@ nav span {
 
 
 
+.btn-login:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+
+.btn-singUp:hover {
+    background-color: #4ae291d0;
+    color: black;
+}
 
 
 
@@ -581,14 +622,22 @@ nav span {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.intro-container a:hover {
+    background: rgb(170, 170, 170);
+    transform: scale(1.05);
+    border-color: rgb(170, 170, 170);
+}
 
 
+.nav-menu {
+    margin: 0px 10px 0px 10px;
+    width: 524px;
+}
 
-
-
-
-
-
+.Logo-container {
+    width: 150px;
+    height: 42px;
+}
 
 
 /*** MEDIAS QUERIES ***/
@@ -723,7 +772,6 @@ nav span {
 }
 
 @media (max-width: 430px) {
-    
     .intro-container h3 .br2 {
         display: none;
     }
@@ -748,14 +796,13 @@ main {
 /***Our Mission***/
 
 .OurMission-container {
+
     width: 100%;
-    height: auto;
+    height: 100vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    padding-top: 8rem;
 }
 
 .OurMission-Conteudo {
@@ -921,15 +968,21 @@ main {
 /***Traning programs***/
 
 .Training-container {
-    margin-top: 10rem;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 
+
+
+
+
+
+
 .TrainingH1-Container {
-    margin-bottom: 10rem;
     width: 540px;
     height: 120px;
     display: flex;
@@ -1006,16 +1059,17 @@ main {
 /*Pricing Plan*/
 
 .Pricing-container {
-    margin-bottom: 8rem;
-    margin-top: 10rem;
+
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
     width: 100%;
-    height: auto;
+    height: 100vh auto;
 }
 
 .PricingH1-Container {
-    margin-bottom: 3rem;
+    margin-bottom: 80px;
     width: 540px;
     height: 120px;
     display: flex;
@@ -1228,8 +1282,13 @@ main {
     transform: scale(1.05);
 }
 
+.PricingFlexCard button:hover {
+    transform: scale(1.05);
+    background: rgb(170, 170, 170);
+}
+
 .PricingFlexCard button {
-    
+
     cursor: pointer;
     width: 159px;
     height: 46px;
@@ -1240,6 +1299,8 @@ main {
     box-sizing: border-box;
     border-radius: 1px;
 }
+
+
 
 .PricingFlexCard button, text {
 
@@ -1318,7 +1379,6 @@ main {
     }
 
     .basic-card-container {
-
         flex-direction: row;
     }
 
@@ -1336,14 +1396,14 @@ main {
     .PremiumCard {
         flex-direction: row;
         width: 100%;
-        height: 352px;
+        height: 310px;
         background: #131316;
         border-radius: 2px;
     }
 
     .EliteCard {
         width: 100%;
-        height: 35%;
+        height: 352px;
         background: rgba(19, 19, 22, 0.05);
         border-radius: 2px;
     }
@@ -1381,7 +1441,7 @@ main {
 
     .pricing-cards-container {
         width: 90%;
-        height: 994px;
+        height: 926px;
         align-self: center;
         flex-direction: column;
     }
@@ -1389,7 +1449,7 @@ main {
     .BasicCard {
         align-self: stretch;
         width: 100%;
-        height: 38%;
+        height: 260px;
         background: rgba(19, 19, 22, 0.05);
         border-radius: 2px;
     }
@@ -1402,17 +1462,15 @@ main {
         align-self: stretch;
         flex-direction: row;
         width: 100%;
-        height: 28%;
+        height: 298px;
         background: #131316;
         border-radius: 2px;
     }
 
-    .elite-card-container {}
-
     .EliteCard {
         align-self: stretch;
         width: 100%;
-        height: 30%;
+        height: 336px;
         background: rgba(19, 19, 22, 0.05);
         border-radius: 2px;
     }
@@ -1495,8 +1553,6 @@ main {
 
     .pricing-cards-container {
         width: 95%;
-        height: 1200px;
-
     }
 }
 
@@ -1592,14 +1648,14 @@ main {
 }
 
 .CommunityH1-Container {
+    margin: 0px 120px 80px 40px;
+
     align-self: top;
     position: relative;
-    width: 360px;
+    width: 375px;
     min-width: 360px;
-    height: 480px;
-    margin: 0px 40px 0px 40px;
+    height: 120px;
 
-    padding: 0px 80px 0px 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1678,18 +1734,27 @@ main {
 }
 
 .community-container {
+    margin: 180px 0px 0px 0px;
+
     position: relative;
     flex-grow: 0;
 
     display: flex;
     flex-direction: row;
-    margin-top: 10rem;
-    height: 480px;
+
+
+    align-content: center;
+
+
+
+
+    height: 100vh;
 }
 
 .communitySlider {
     position: relative;
     width: 1280px;
+    height: 480px;
 }
 
 .communitySlider .slick-list .slick-track {
@@ -1727,21 +1792,21 @@ main {
     width: 360px;
     height: 480px;
     background-repeat: no-repeat;
-    background-image: url('https://risxard.github.io/Gymme/assets/css/Community/1.png');
+    background-image: url(/assets/css/Community/1.png);
 }
 
 .Lauren {
     width: 360px;
     height: 480px;
     background-repeat: no-repeat;
-    background-image: url('https://risxard.github.io/Gymme/assets/css/Community/2.png');
+    background-image: url(/assets/css/Community/2.png);
 }
 
 .John {
     width: 360px;
     height: 480px;
     background-repeat: no-repeat;
-    background-image: url('https://risxard.github.io/Gymme/assets/css/Community/3.png');
+    background-image: url(/assets/css/Community/3.png);
 }
 
 
@@ -1763,10 +1828,11 @@ main {
 @media (max-width: 1024px) {
 
     .CommunityH1-Container {
-        height: 230px;
+        height: 120px;
         position: relative;
         align-self: center;
-        margin: 0;
+        margin: 0px 0px 0px 0px;
+
     }
 
     .community-container {
@@ -1775,21 +1841,21 @@ main {
     }
 
     .communitySlider {
+        margin-top: 80px;
         width: 100vw;
         align-self: center;
     }
 
     .communitySlider .prev_arrow {
         left: inherit;
-        bottom: -120px;
+        bottom: -80px;
         right: 100px;
     }
 
     .communitySlider .next_arrow {
         left: inherit;
-        bottom: -120px;
+        bottom: -81px;
         right: 30px;
-
     }
 
     .communitySlider .slick-list {
@@ -1800,11 +1866,20 @@ main {
 }
 
 @media (max-width: 768px) {
-    
+    .community-container {
+        height: 100vh;
+        justify-content: center;
+
+    }
+
     .Mark, .Lauren, .John {
         width: 300px;
         height: 400px;
         background-size: cover;
+    }
+
+    .communitySlider {
+        height: 400px;
     }
 
     .communitySlider .slick-slide {
@@ -1873,19 +1948,32 @@ main {
         color: #FFFFFF;
     }
 
+
+    .communitySlider .prev_arrow {
+        left: inherit;
+        bottom: -79px;
+        right: 100px;
+    }
+
+    .communitySlider .next_arrow {
+        left: inherit;
+        bottom: -80px;
+        right: 30px;
+    }
+
 }
 
 
 
 @media (max-width: 480px) {
     .CommunityH1-Container {
+        position: absolute;
         margin-left: 20px;
         left: 0;
+        top: 80px;
         width: 245px;
         height: 80px;
         padding: 0;
-        position: absolute;
-        align-self: center;
     }
 
     .CommunityH1-Container strong {
@@ -1928,7 +2016,7 @@ main {
 
 
     .communitySlider {
-        margin-top: 10rem;
+        margin-top: 80px;
     }
 
     .communitySlider .slick-slide {
@@ -1963,7 +2051,7 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-    background-image: url('https://risxard.github.io/Gymme/assets/css/FAQ/Vector.png');
+    background-image: url(/assets/css/FAQ/Vector.png);
 }
 
 .FAQ-accordion {
@@ -1993,7 +2081,7 @@ main {
     display: flex;
     flex-direction: column;
 
-    margin-top: 10rem;
+    padding: 0px 0px 180px 0px;
 }
 
 .faqH1-container {
@@ -2118,11 +2206,14 @@ main {
 
 @media (max-width: 1024px) {
     .Faq-content {
+
         width: 620px;
     }
+
+    .FAQ-container {
+        margin-top: 180px;
+    }
 }
-
-
 
 
 
@@ -2131,6 +2222,10 @@ main {
         background: none;
     }
 
+    .FAQ-container {
+        margin-top: 180px;
+    }
+    
     .faqH1-container {
         position: absolute;
         left: 50px;
@@ -2191,7 +2286,7 @@ main {
 
 
 /* RODAPÉ CONTENT*/
-footer{
+footer {
     margin-top: 100px;
 }
 
@@ -2276,6 +2371,10 @@ footer{
     color: #FFFFFF;
 }
 
+.footIntro a:hover {
+    transform: scale(1.05);
+    background: rgb(241, 241, 241);
+}
 
 .footIntro a {
     display: flex;
@@ -2402,10 +2501,6 @@ footer{
 
 
 
-
-
-
-
 .direitos {
     position: relative;
     display: flex;
@@ -2421,9 +2516,11 @@ footer{
 }
 
 .logoDireitos svg {
+    cursor: pointer;
     left: 63px;
 }
-.rodapeTexto{
+
+.rodapeTexto {
     margin-left: 10px;
 }
 
