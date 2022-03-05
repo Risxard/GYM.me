@@ -214,7 +214,7 @@ html {
     height: 34px;
 
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255,);
 
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -235,7 +235,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255,);
 
     width: 86px;
     height: 33px;
