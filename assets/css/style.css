@@ -969,7 +969,6 @@ main {
 /***Traning programs***/
 
 .Training-container {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -984,7 +983,6 @@ main {
 
 
 .TrainingH1-Container {
-    margin-bottom: 80px;
     width: 540px;
     height: 120px;
     display: flex;
