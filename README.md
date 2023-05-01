@@ -1,4 +1,4 @@
-<h1 align="center">👨🏾‍💻 LANDING PAGE MORDERNA E RESPONSIVA 👨🏾‍💻</h1>
+<h1 align="center">👨🏾‍💻 Landing Page Responsiva 👨🏾‍💻</h1>
 
 <p align="center">
  <a href='https://risxard.github.io/Gymme/'>» Visitar Site «</a>
