@@ -62,8 +62,6 @@
 
     align-self: center;
     justify-content: center;
-
-    padding: 80px 0px 80px 0px;
 }
 
 .slider-container .slider_items h3 {
@@ -127,22 +125,6 @@
         transition: all 0.5s;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
