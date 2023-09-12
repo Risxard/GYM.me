@@ -7,13 +7,13 @@
 .slider-container .prev_arrow{
     cursor: pointer;
     position: absolute;
-    bottom: -40px;
+    bottom: clamp(-90px, -12%, -90px);
     right: 110px;
 }
 .slider-container .next_arrow{
     cursor: pointer;
     position: absolute;
-    bottom: -41px;
+    bottom: clamp(-91px, -12%, -91px);
     right: 40px;
 }
 
@@ -97,13 +97,15 @@
 
 @media (max-width: 768px){
     .slider-container .prev_arrow{
-        bottom: -40px;
+        bottom: clamp(-90px, -12%, -90px);
         right: 0;
 
         right: 52%;
+
+        
     }
     .slider-container .next_arrow{
-        bottom: -41px;
+        bottom: clamp(-91px, -12%, -91px);
         left: 52%;
 
     }

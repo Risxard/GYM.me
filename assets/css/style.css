@@ -7,6 +7,12 @@ html {
     overflow-y: auto;
 }
 
+section{
+    margin-top: clamp(80px, 12%, 180px);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -798,7 +804,7 @@ main {
 .OurMission-container {
 
     width: 100%;
-    height: 100vh;
+    height: auto;
 
     display: flex;
     align-items: center;
@@ -926,6 +932,8 @@ main {
 @media (max-width: 650px) {
 
 
+
+
     .OurMission-Conteudo {
         width: 100%;
         padding: 20px;
@@ -971,19 +979,22 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
     width: 100%;
-    height: 100vh;
-    margin-bottom: 180px;
+    height: auto;
 }
 
 
 
 .TrainingH1-Container {
-    width: 540px;
+    width: auto;
     height: 120px;
     display: flex;
+    position: relative;
     flex-direction: row;
-    align-self: center;
+    padding: 20px;
+    white-space: nowrap
 }
 
 .TrainingH1-Container img {
@@ -992,6 +1003,7 @@ main {
 }
 
 .TrainingH1-Container h1 {
+    word-break: keep-all;
     margin-left: 70px;
     align-self: center;
     font-family: 'Inter', sans-serif;
@@ -1011,13 +1023,15 @@ main {
 
 @media (max-width: 650px) {
     .TrainingH1-Container h1 {
-        margin-left: 50px;
+        margin-left: 40px;
         font-size: 32px;
         line-height: 40px;
     }
+    .Training-container{
+        align-items: start;
+    }
 
     .TrainingH1-Container {
-        width: 351px;
         height: 80px;
     }
 
@@ -1062,11 +1076,16 @@ main {
     justify-content: center;
     width: 100%;
     height: 100vh auto;
+    margin-top: clamp(170px, 15%, 250px);
+
+    padding: 20px;
 }
 
 .PricingH1-Container {
+    position: relative;
     margin-bottom: 80px;
-    width: 540px;
+    width: 100%;
+    padding: 20px;
     height: 120px;
     display: flex;
     flex-direction: row;
@@ -1077,11 +1096,11 @@ main {
 }
 
 .PricingH1-Container img {
-    position: absolute;
-    margin-left: -160px;
+    align-self: center;
 }
 
 .PricingH1-Container h1 {
+    margin-left: -50px;
     align-self: center;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -1365,7 +1384,6 @@ margin-top: 80px;
     }
 
     .pricing-cards-container {
-        width: 78%;
         height: 994px;
         align-self: center;
         flex-direction: column;
@@ -1421,6 +1439,9 @@ margin-top: 80px;
 
 
 @media (max-width: 650px) {
+    .PricingH1-Container{
+        padding: 0;
+    }
 
     .PricingFlexCard:hover {
         transition: none;
@@ -1433,7 +1454,6 @@ margin-top: 80px;
     }
 
     .pricing-cards-container {
-        width: 90%;
         height: 926px;
         align-self: center;
         flex-direction: column;
@@ -1467,6 +1487,30 @@ margin-top: 80px;
         background: rgba(19, 19, 22, 0.05);
         border-radius: 2px;
     }
+
+    .PricingH1-Container h1 {
+        margin-left: -30px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .PricingH1-Container {
+        width: 100%;
+        height: 80px;
+
+        justify-content: left;
+        align-self: left;
+        text-align: left;
+    }
+
+    .PricingH1-Container img {
+
+        align-self: center;
+        width: 80px;
+        height: 80px;
+
+        margin-left: -0px;
+    }
 }
 
 
@@ -1499,35 +1543,15 @@ margin-top: 80px;
         gap: 15px;
     }
 
+
+
 }
 
 
 @media (max-width: 480px) {
 
 
-    .PricingH1-Container h1 {
-        margin-left: 40px;
-        font-size: 32px;
-        line-height: 40px;
-    }
 
-    .PricingH1-Container {
-        width: 100%;
-        height: 80px;
-
-        justify-content: left;
-        align-self: left;
-        text-align: left;
-    }
-
-    .PricingH1-Container img {
-
-        align-self: center;
-        width: 80px;
-        height: 80px;
-
-        margin-left: -0px;
-    }
 
 
 
@@ -1545,7 +1569,7 @@ margin-top: 80px;
     }
 
     .pricing-cards-container {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -1600,19 +1624,6 @@ margin-top: 80px;
 
 
 
-.communitySlider .prev_arrow {
-    position: absolute;
-    bottom: 0;
-    left: -26%;
-    cursor: pointer;
-}
-
-.communitySlider .next_arrow {
-    position: absolute;
-    bottom: 0;
-    left: -20%;
-    cursor: pointer;
-}
 
 
 
@@ -1641,7 +1652,6 @@ margin-top: 80px;
 }
 
 .CommunityH1-Container {
-    margin: 0px 120px 80px 40px;
 
     align-self: top;
     position: relative;
@@ -1725,23 +1735,29 @@ margin-top: 80px;
 
     color: #FFFFFF;
 }
+.innerCommunityH1{
+    width: auto;
+    height: 480px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
 
 .community-container {
-    margin: 180px 0px 0px 0px;
-
     position: relative;
     flex-grow: 0;
 
     display: flex;
     flex-direction: row;
 
+    height: auto;
 
-    align-content: center;
+    gap: 80px;
 
-
-
-
-    height: 100vh;
+    padding-left: 80px;
 }
 
 .communitySlider {
@@ -1749,6 +1765,20 @@ margin-top: 80px;
     width: 1280px;
     height: 480px;
 }
+
+.CommunitySliderBtns{
+    position: absolute;
+    display: flex;
+    bottom: 50px;
+    left: 150px;
+
+    flex-direction: row;
+    gap: 32px;
+}
+
+
+
+
 
 .communitySlider .slick-list .slick-track {
     margin: 0;
@@ -1769,6 +1799,14 @@ margin-top: 80px;
     transition: all .1s;
     filter: opacity(90%);
 }
+
+
+
+
+
+
+
+
 
 
 .Mark, .Lauren, .John {
@@ -1820,47 +1858,57 @@ margin-top: 80px;
 
 @media (max-width: 1024px) {
 
+    .CommunitySliderBtns{
+        position: relative;
+        display: flex;
+        bottom: inherit;
+        left: inherit;
+    
+        flex-direction: row;
+        gap: 32px;
+    }
+
     .CommunityH1-Container {
         height: 120px;
         position: relative;
         align-self: center;
-        margin: 0px 0px 0px 0px;
 
     }
 
     .community-container {
         height: auto;
         flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
 
     .communitySlider {
-        margin-top: 80px;
+
         width: 100vw;
         align-self: center;
     }
 
-    .communitySlider .prev_arrow {
-        left: inherit;
-        bottom: -80px;
-        right: 100px;
-    }
-
-    .communitySlider .next_arrow {
-        left: inherit;
-        bottom: -81px;
-        right: 30px;
-    }
 
     .communitySlider .slick-list {
         align-items: flex-start;
         width: auto;
     }
 
+    .CommunitySliderBtns1{
+        display: none;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+
+
 }
 
 @media (max-width: 768px) {
+
+
     .community-container {
-        height: 100vh;
+        height: auto;
         justify-content: center;
 
     }
@@ -1942,25 +1990,12 @@ margin-top: 80px;
     }
 
 
-    .communitySlider .prev_arrow {
-        left: inherit;
-        bottom: -79px;
-        right: 100px;
-    }
-
-    .communitySlider .next_arrow {
-        left: inherit;
-        bottom: -80px;
-        right: 30px;
-    }
-
 }
 
 
 
 @media (max-width: 480px) {
     .CommunityH1-Container {
-        position: absolute;
         margin-left: 20px;
         left: 0;
         top: 80px;
@@ -1994,17 +2029,6 @@ margin-top: 80px;
 
         width: 89px;
         height: 80px;
-    }
-
-
-    .communitySlider .prev_arrow {
-        left: 35%;
-        right: 50%;
-    }
-
-    .communitySlider .next_arrow {
-        left: 50%;
-        right: 35%;
     }
 
 
@@ -2074,18 +2098,20 @@ margin-top: 80px;
     display: flex;
     flex-direction: column;
 
-    padding: 0px 0px 180px 0px;
+    align-items: center;
+    justify-content: center;
 }
 
 .faqH1-container {
-    margin-top: 3rem;
-    position: absolute;
-    top: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .faqH1-container h1 {
-
-    padding-top: 40px;
+    margin-left: -10px;
     align-items: top;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -2199,13 +2225,9 @@ margin-top: 80px;
 
 @media (max-width: 1024px) {
     .Faq-content {
-
         width: 620px;
     }
 
-    .FAQ-container {
-        margin-top: 180px;
-    }
 }
 
 
@@ -2214,31 +2236,16 @@ margin-top: 80px;
     .Faq-content {
         background: none;
     }
-
-    .FAQ-container {
-        margin-top: 180px;
-    }
     
-    .faqH1-container {
-        position: absolute;
-        left: 50px;
-        margin-top: 100px;
-        height: 200px;
-    }
 
     .faqH1-container img {
-
-        top: 20px;
         left: -40px;
 
-
-        position: absolute;
         display: inherit;
     }
 
     .faqH1-container h1 {
 
-        padding-top: 40px;
         align-items: top;
         font-family: 'Inter', sans-serif;
         font-style: normal;
@@ -2248,11 +2255,11 @@ margin-top: 80px;
     }
 
     .Faq-content {
-        width: 90%;
+        width: 100%;
     }
 
     .FAQ-accordion {
-
+        padding: 20px;
         width: 100%;
 
     }
@@ -2268,7 +2275,7 @@ margin-top: 80px;
 
 @media (max-width: 480px) {
     .Faq-content {
-        width: 97%;
+        width: 100%;
     }
 
     .faqItem {

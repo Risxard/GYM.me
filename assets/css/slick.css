@@ -18,9 +18,9 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.slick-disabled svg{
+.slick-disabled {
     transition: all .3s;
-    opacity: 10%;
+    opacity: 20%;
 }
 
 .slick-list
