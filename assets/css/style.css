@@ -1775,8 +1775,10 @@ margin-top: 80px;
     flex-direction: row;
     gap: 32px;
 }
+.CommunityPrevBtn, .CommunityNextBtn{
 
-
+    cursor: pointer;
+}
 
 
 
